@@ -2,7 +2,7 @@
     <h1>Personajes</h1>
 
     <Personaje
-        img="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Dani_Rovira_en_%C3%93xido_Nitroso_en_2011.JPG/220px-Dani_Rovira_en_%C3%93xido_Nitroso_en_2011.JPG"
+        :img="dani"
 
         nombre="Daniel Rovira de Rivas"
 
@@ -11,7 +11,7 @@
         la película Ocho apellidos vascos, dirigida por Emilio Martínez-Lázaro." />
     
     <Personaje
-        img="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Premios_Goya_2020_-_Clara_Lago_%28cropped%29.jpg/220px-Premios_Goya_2020_-_Clara_Lago_%28cropped%29.jpg"
+        :img="clara"
 
         nombre="Clara Lago Grau"
 
@@ -19,7 +19,7 @@
     />
 
     <Personaje
-        img="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Carmen_Machi%2C_Festival_de_Sitges_2017.jpg/220px-Carmen_Machi%2C_Festival_de_Sitges_2017.jpg"
+        :img="carmen"
 
         nombre="Carmen Machi"
 
@@ -27,7 +27,7 @@
     />
 
     <Personaje
-        img="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Karra_Elejalde%2C_XIII_Premis_Gaud%C3%AD_%282021%29.jpg/250px-Karra_Elejalde%2C_XIII_Premis_Gaud%C3%AD_%282021%29.jpg"
+        :img="karra"
 
         nombre="Karra Elejalde"
 
@@ -35,7 +35,7 @@
     />    
     
     <Personaje
-        img="https://cdn.diariodeavisos.com/wp-content/uploads/2020/06/rosa-maria-sarda.jpg"
+        :img="rosa"
 
         nombre="Rosa María Sardà"
 
@@ -46,8 +46,27 @@
 
 <script>
 import { defineAsyncComponent } from 'vue'
+//assets
+import img1 from '@/assets/Dani.jpeg'
+import img2 from '@/assets/clara.jpg'
+import img3 from '@/assets/carmen.jpg'
+import img4 from '@/assets/karra.jpg'
+import img5 from '@/assets/rosa-maria-sarda.jpg'
+
+
 
 export default {
+
+    data() {
+        return {
+            dani: img1,
+            clara: img2,
+            carmen: img3,
+            karra: img4,
+            rosa: img5
+        }
+    },
+
     components: {
         Personaje: defineAsyncComponent(() => import('@/components/personajes/personaje.vue'))
     }
