@@ -1,14 +1,7 @@
 <template>
-<header>
-  <nav>
-    <router-link :to="{name: 'home'}">inicio</router-link> |
-    <router-link :to="{name: 'director'}">Director</router-link> | 
-    <router-link :to="{name: 'personaje'}">Personajes</router-link> | 
-    <router-link :to="{name: 'streaming'}">Dónde ver</router-link> | 
-    <router-link :to="{name: 'media'}">Media</router-link> | 
-    <router-link :to="{name: 'opinion'}">Opinión</router-link> | 
-    <router-link :to="{name: 'bibliografia'}">Más Info</router-link> 
-  </nav>
+  <header>
+    
+    <NavBar/>
 
   </header>
   <router-view/>
@@ -17,18 +10,17 @@
   </footer>
 </template>
 
-<style>
-/*
-nav {
-  padding: 30px;
+<script>
+import { defineAsyncComponent } from '@vue/runtime-core'
+export default {
+  components: {
+    NavBar: defineAsyncComponent(() => import('@/components/NavBar.vue'))
+  }  
 }
 
-nav a {
-  font-weight: bold;
-  color: #000;
-}
+</script>
 
-nav a.router-link-exact-active {
-  color: #42b983;
-} */
+<style scoped>
+  
+
 </style>
