@@ -21,20 +21,29 @@
 
 <style scoped>
 nav {
-  @apply flex justify-between items-stretch items-center;
+  @apply flex justify-between;
 }
 
 .nav-right {
-  @apply flex py-5 items-center;
+  @apply flex items-center;
 }
 
 .nav-right a,
 .nav-left {
-  @apply items-stretch py-4;
+  @apply items-stretch py-4 px-4 flex;
+}
+
+.nav-right a:after {
+  @apply content-none absolute bottom-0 -left-full w-full h-[2px] bg-red-600;
+  transition: left 0.2s;
+}
+
+.nav-right a:hover:after {
+left: 0;
 }
 
 .nav-right a.router-link-exact-active {
-  @apply text-white bg-red-400;
+  @apply text-red-600;
 }
 
 .nav-left {

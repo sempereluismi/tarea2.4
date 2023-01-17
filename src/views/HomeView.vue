@@ -47,7 +47,7 @@ h2 {
 }
 
 main img {
-  @apply w-[800px];
+  @apply w-[800px] rounded;
 }
 
 .container {
@@ -63,6 +63,6 @@ main p {
 }
 
 .layout {
-  @apply mx-10 grid grid-cols-2 gap-4;
+  @apply mx-10 grid grid-cols-2 gap-4 items-center;
 }
 </style>
