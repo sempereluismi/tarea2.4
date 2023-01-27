@@ -1,7 +1,7 @@
 <template>
   <div class="container"></div>
 
-  <main>
+  <section>
 
     <h1>OCHO APELLIDOS CATALANES</h1>
     <div class="layout">
@@ -30,7 +30,7 @@
       </div>
  
     </div>
-  </main>
+  </section>
 </template>
 
 <style scoped>
@@ -46,7 +46,7 @@ h2 {
   @apply col-span-2;
 }
 
-main img {
+section img {
   @apply w-[800px] rounded;
 }
 
@@ -54,11 +54,11 @@ main img {
   @apply w-full h-[90vh] flex -z-50 bg-[url('@/assets/portada.jpg')] bg-fixed bg-cover items-end;
 }
 
-main {
+section {
   @apply -mt-32 z-50 bg-white rounded-t-[4rem];
 }
 
-main p {
+section p {
   @apply text-xl;
 }
 

@@ -2,7 +2,9 @@
   <header>
     <NavBar/>
   </header>
-  <router-view/>
+  <main>
+    <router-view/>
+  </main>
   <Footer/>
 </template>
 
@@ -16,3 +18,9 @@ export default {
 }
 
 </script>
+
+<style scoped>
+  main {
+    @apply mt-16;
+  }
+</style>

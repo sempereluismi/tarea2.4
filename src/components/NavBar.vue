@@ -25,7 +25,7 @@ nav {
 }
 
 .nav-right {
-  @apply flex items-center;
+  @apply flex items-center text-lg;
 }
 
 .nav-right a,
@@ -34,7 +34,7 @@ nav {
 }
 
 .nav-right a:after {
-  @apply content-none absolute bottom-0 -left-full w-full h-[2px] bg-red-600;
+  @apply content-none absolute bottom-0 -left-full w-full h-[2px];
   transition: left 0.2s;
 }
 
