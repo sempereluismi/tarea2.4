@@ -13,7 +13,7 @@
       <router-link :to="{ name: 'streaming' }">Dónde ver</router-link>
       <router-link :to="{ name: 'media' }">Media</router-link>
       <router-link :to="{ name: 'opinion' }">Opinión</router-link>
-      <router-link :to="{ name: 'bibliografia' }">Más Info</router-link>
+
     </div>
   </nav>
 </template>
@@ -21,7 +21,7 @@
 
 <style scoped>
 nav {
-  @apply flex justify-between;
+  @apply flex justify-between fixed top-0 left-0 right-0 bg-white max-h-max;
 }
 
 .nav-right {
@@ -38,7 +38,7 @@ nav {
   transition: left 0.2s;
 }
 
-.nav-right a:hover:after {
+.nav-right a :hover:after {
 left: 0;
 }
 

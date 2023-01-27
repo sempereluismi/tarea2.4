@@ -36,12 +36,7 @@ const routes = [
     
     component: () => import(/* webpackChunkName: "director" */ '../views/OpinionView.vue')
   },
-  {
-    path: '/bibliografia',
-    name: 'bibliografia',
-    
-    component: () => import(/* webpackChunkName: "director" */ '../views/Bibliografia.vue')
-  },
+
 ]
 
 const router = createRouter({
