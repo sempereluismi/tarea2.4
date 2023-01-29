@@ -32,18 +32,28 @@ nav {
 .nav-left {
   @apply items-stretch py-4 px-4 flex;
 }
-
-.nav-right a:after {
-  @apply content-none absolute bottom-0 -left-full w-full h-[2px];
-  transition: left 0.2s;
+.nav-right a  {
+  @apply relative
 }
 
-.nav-right a :hover:after {
-left: 0;
+.nav-right a::before {
+  @apply content-[''] absolute left-0 bottom-0 w-full h-[2px] bg-background rounded-[4px];
+  scale: 0 1;
+  transform-origin: left;
+  transition: scale 0.25s;
 }
 
-.nav-right a.router-link-exact-active {
-  @apply text-red-600;
+.nav-right a:hover::before {
+  scale: 1;
+}
+
+.nav-right a:hover {
+  @apply text-background;
+}
+
+.nav-right a.router-link-exact-active::before {
+  @apply content-[''] absolute left-0 bottom-0 w-full h-[2px] bg-background rounded-[4px];
+  scale: 1;
 }
 
 .nav-left {

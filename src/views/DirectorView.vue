@@ -47,8 +47,11 @@ h2 {
 }
 
 section {
-  @apply grid grid-cols-1 sm:grid-cols-2 px-6 py-6 gap-6;
+  @apply grid grid-cols-1 sm:grid-cols-2 px-6 py-6 gap-6 items-center;
   @apply -mt-32 z-50 bg-white rounded-t-[4rem];
+}
 
+img {
+   @apply w-[600px];
 }
 </style>

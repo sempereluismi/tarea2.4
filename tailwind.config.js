@@ -8,7 +8,10 @@ module.exports = {
     extend: {
       'fontFamily':{
         'title': ['Passion One', 'cursive']
-      } 
+      },
+      colors: {
+        'background': '#CF4949'
+      }
     },
   },
   plugins: [],
