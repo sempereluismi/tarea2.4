@@ -20,3 +20,9 @@
         </tr>
     </table>
 </template>
+
+<style scoped>
+
+    
+
+</style>

@@ -28,12 +28,12 @@ nav {
   @apply flex items-center text-lg;
 }
 
-.nav-right a,
+
 .nav-left {
   @apply items-stretch py-4 px-4 flex;
 }
 .nav-right a  {
-  @apply relative
+  @apply relative px-4;
 }
 
 .nav-right a::before {
