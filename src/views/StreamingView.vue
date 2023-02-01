@@ -1,22 +1,62 @@
 <template>
-    <h1>Dónde ver</h1>
+    <div class="container"></div>
+  
+    <section>
+  
+      <h1>Dónde Ver</h1>
 
-    <div>
-        <card/>
-    </div>
-</template>
+      <card :img="img1" nombre="Netflix" precio="Subcripción" link="https://www.netflix.com/es/title/80093212?source=35"/>
+      <card :img="img2" nombre="hbo max" precio="Subcripción" link="https://play.hbomax.com/page/urn:hbo:page:GYXELTwy7GjeNogEAAASe:type:feature?source=googleHBOMAX&action=open"/>
+      <card :img="img3" nombre="Movistar+" precio="3,99 €" link="https://ver.movistarplus.es/ficha?id=1278461&origen=GGL"/>
+      <card :img="img4" nombre="Amazon prime" precio="Subcripción" link="https://www.primevideo.com/dp/amzn1.dv.gti.0eb51679-3e6d-8d93-e698-d9860fe6e122?autoplay=0&ref_=atv_cf_strg_wb"/>
 
-<script>
-import { defineAsyncComponent } from 'vue'
-export default {
+    </section>
+  </template>
+
+  <script>
+import { defineAsyncComponent } from '@vue/runtime-core'
+
+import img1 from '@/assets/netflix.png'
+import img2 from '@/assets/hbo.jpg'
+import img3 from '@/assets/movistar.jpg'
+import img4 from '@/assets/prime.jpg'
+
+  export default {
     components: {
-        card: defineAsyncComponent( () => import("@/components/Card.vue"))
+      Card: defineAsyncComponent( () => import('@/components/Card.vue'))
+    },
+
+    data () {
+      return {
+        img1,
+        img2,
+        img3,
+        img4
+      }
     }
-}
-</script>
-
-<style scoped>
-
+  }
+  </script>
+  
+  <style scoped>
+  h1 {
+    @apply text-6xl text-center font-title py-4 uppercase col-span-2;
+  }
+  
+  
+  .container {
+    @apply w-full h-[90vh] flex -z-50 bg-[url('@/assets/streaming.jpg')] bg-fixed bg-cover items-end;
+  }
+  
+  section {
+    @apply grid lg:grid-cols-2 -mt-32 z-50 bg-white rounded-t-[4rem];
+  }
+  
+  section p {
     
-
-</style>
+  }
+  
+  .layout {
+    @apply mx-10 grid grid-cols-2 gap-4 items-center;
+  }
+  </style>
+  

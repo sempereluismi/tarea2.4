@@ -20,7 +20,7 @@
 
 <style scoped>
 .principal {
-    @apply mt-12 grid sm:grid-cols-2 justify-center py-6 px-10 text-3xl bg-background rounded-t-xl font-title;
+    @apply mt-12 grid gap-y-10 lg:grid-cols-2 justify-center py-6 px-10 text-3xl bg-background rounded-t-xl font-title;
 }
 
 .principal div {

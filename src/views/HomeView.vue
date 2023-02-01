@@ -5,7 +5,7 @@
 
     <h1>OCHO APELLIDOS CATALANES</h1>
     <div class="layout">
-      <div class="imagen">
+      <div class="img">
         <img src="@/assets/info.webp" alt="portada pelicula">
       </div>
       <div>
@@ -44,6 +44,10 @@ h2 {
 
 .pie {
   @apply col-span-2;
+}
+
+.img {
+  @apply justify-self-center;
 }
 
 section img {

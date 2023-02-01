@@ -4,7 +4,7 @@
   <section>
     <h1>Director</h1>
 
-    <div>
+    <div class="img">
       <img src="@/assets/director.jpeg" alt="director">
     </div>
     <div>
@@ -39,7 +39,7 @@
 }
 
 h1 {
-  @apply font-title text-6xl col-span-2;
+  @apply text-6xl text-center font-title py-4 uppercase col-span-2;
 }
 
 h2 {
@@ -49,6 +49,10 @@ h2 {
 section {
   @apply grid grid-cols-1 sm:grid-cols-2 px-6 py-6 gap-6 items-center;
   @apply -mt-32 z-50 bg-white rounded-t-[4rem];
+}
+
+.img {
+  @apply justify-self-center;
 }
 
 img {

@@ -21,7 +21,7 @@
 
 <style scoped>
 nav {
-  @apply flex justify-between fixed top-0 left-0 right-0 bg-white max-h-max;
+  @apply flex justify-between fixed top-0 left-0 right-0 bg-white max-h-max z-50;
 }
 
 .nav-right {
@@ -33,7 +33,7 @@ nav {
   @apply items-stretch py-4 px-4 flex;
 }
 .nav-right a  {
-  @apply relative px-4;
+  @apply relative mx-4;
 }
 
 .nav-right a::before {

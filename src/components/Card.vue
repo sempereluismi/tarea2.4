@@ -1,38 +1,60 @@
 <template>
-  <div class="container">
-    <a
-      href="https://www.netflix.com/es/title/80093212?source=35"
-      target="_blank"
-    >
-      <div class="logo">
-        <img src="@/assets/netflix.png" alt="logo" />
-        <h2>NETFLIX</h2>
-      </div>
-
-      <div class="body">
-        <p>Precio: Subcripción</p>
-      </div>
-    </a>
-  </div>
+    <div class="card">
+            <a :href="link" target="_blank">
+                <h2>{{ nombre }}</h2>
+                    <img :src="img" />
+                    <p>
+                        Precio: {{ precio }}
+                    </p>
+            </a>
+    </div>
 </template>
 
 <script>
-export default {};
+export default {
+    props: {
+        img: {
+            type: String,
+            required: true
+        },
+
+        nombre: {
+            type: String,
+            required: true
+        },
+
+        precio: {
+            type: String,
+            required: true
+        },
+
+        link: {
+            type: String,
+            required: true
+        }
+    }
+}
 </script>
 
 <style scoped>
+.card {
+    @apply w-[800px] shadow-xl rounded-xl bg-white my-10 py-10 px-6 mx-6 justify-self-center;
+}
+
+
+h2 {
+    @apply font-title text-5xl tracking-[1rem] uppercase;
+}
+
 img {
-  @apply w-[70px];
+    @apply w-[200px] h-[200px] rounded-xl;
 }
 
-.container {
-  @apply w-[500px] border-2 border-background rounded-xl;
-}
-.logo {
-  @apply flex items-center justify-center gap-6 text-6xl tracking-[1rem] font-bold text-red-700 py-6 ;
+p {
+    @apply text-3xl mt-10;
 }
 
-.body {
-  @apply text-4xl tracking-widest text-center py-10;
+a {
+    @apply flex flex-col justify-center items-center;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="card">
         <h2>{{ nombre }}</h2>
         <div class="subcontainer">
             <img :src="img" />
@@ -33,8 +33,8 @@ export default {
 
 <style scoped>
 
-    .container {
-        @apply shadow-xl rounded-xl bg-background my-10 py-10 px-6 mx-6;
+    .card {
+        @apply shadow-xl rounded-xl bg-white my-10 py-10 px-6 mx-6;
     }
 
     h2 {
@@ -42,7 +42,7 @@ export default {
     }
 
     .subcontainer {
-        @apply grid grid-cols-1 lg:flex items-center justify-center gap-10;
+        @apply xl:flex items-center justify-center gap-10;
     }
 
     img {
