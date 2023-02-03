@@ -5,11 +5,10 @@
   
       <h1>Dónde Ver</h1>
 
-      <card :img="img1" nombre="Netflix" precio="Subcripción" link="https://www.netflix.com/es/title/80093212?source=35"/>
-      <card :img="img2" nombre="hbo max" precio="Subcripción" link="https://play.hbomax.com/page/urn:hbo:page:GYXELTwy7GjeNogEAAASe:type:feature?source=googleHBOMAX&action=open"/>
-      <card :img="img3" nombre="Movistar+" precio="3,99 €" link="https://ver.movistarplus.es/ficha?id=1278461&origen=GGL"/>
-      <card :img="img4" nombre="Amazon prime" precio="Subcripción" link="https://www.primevideo.com/dp/amzn1.dv.gti.0eb51679-3e6d-8d93-e698-d9860fe6e122?autoplay=0&ref_=atv_cf_strg_wb"/>
-
+      <card class="animationCard" :img="img1" nombre="Netflix" precio="Subcripción" link="https://www.netflix.com/es/title/80093212?source=35"/>
+      <card class="animationCard" :img="img2" nombre="hbo max" precio="Subcripción" link="https://play.hbomax.com/page/urn:hbo:page:GYXELTwy7GjeNogEAAASe:type:feature?source=googleHBOMAX&action=open"/>
+      <card class="animationCard" :img="img3" nombre="Movistar+" precio="3,99 €" link="https://ver.movistarplus.es/ficha?id=1278461&origen=GGL"/>
+      <card class="animationCard" :img="img4" nombre="Amazon prime" precio="Subcripción" link="https://www.primevideo.com/dp/amzn1.dv.gti.0eb51679-3e6d-8d93-e698-d9860fe6e122?autoplay=0&ref_=atv_cf_strg_wb"/>
     </section>
   </template>
 
@@ -51,8 +50,8 @@ import img4 from '@/assets/prime.jpg'
     @apply grid lg:grid-cols-2 -mt-32 z-50 bg-white rounded-t-[4rem];
   }
   
-  section p {
-    
+  .animationCard {
+    @apply hover:-translate-y-4 transition-all ease-in-out duration-200;
   }
   
   .layout {

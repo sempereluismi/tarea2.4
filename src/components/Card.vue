@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .card {
-    @apply w-[800px] shadow-xl rounded-xl bg-white my-10 py-10 px-6 mx-6 justify-self-center;
+    @apply shadow-xl rounded-xl bg-white my-10 py-10 px-6 mx-6;
 }
 
 

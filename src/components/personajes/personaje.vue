@@ -42,7 +42,7 @@ export default {
     }
 
     .subcontainer {
-        @apply xl:flex items-center justify-center gap-10;
+        @apply lg:flex items-center justify-center gap-10;
     }
 
     img {

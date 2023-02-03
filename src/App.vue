@@ -5,7 +5,7 @@
     </header>
     <main>
       <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
+      <transition name="fade" >
         <div :key="$route.name">
           <component :is="Component"></component>
         </div>
@@ -34,7 +34,7 @@ main {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .2s;
+  transition: opacity .2s ease-in-out;
 }
 
 .fade-enter,
