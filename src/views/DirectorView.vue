@@ -39,7 +39,7 @@
 }
 
 h1 {
-  @apply text-6xl text-center font-title py-4 uppercase col-span-2;
+  @apply text-6xl text-center font-title py-4 uppercase xl:col-span-2;
 }
 
 h2 {
@@ -47,15 +47,15 @@ h2 {
 }
 
 section {
-  @apply grid grid-cols-1 sm:grid-cols-2 px-6 py-6 gap-6 items-center;
+  @apply grid grid-cols-1 xl:grid-cols-2 px-6 py-6 gap-6 items-center;
   @apply -mt-32 z-50 bg-white rounded-t-[4rem];
 }
 
 .img {
-  @apply justify-self-center;
+  @apply w-[600px] justify-self-center;
 }
 
 img {
-   @apply w-[600px];
+   @apply w-full;
 }
 </style>

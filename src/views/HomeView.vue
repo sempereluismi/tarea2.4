@@ -43,7 +43,7 @@ h2 {
 }
 
 .pie {
-  @apply col-span-2;
+  @apply xl:col-span-2;
 }
 
 .img {
@@ -53,7 +53,6 @@ h2 {
 section img {
   @apply w-[800px] rounded;
 }
-
 .container {
   @apply w-full h-[90vh] flex -z-50 bg-[url('@/assets/portada.jpg')] bg-fixed bg-cover items-end;
 }
@@ -67,6 +66,6 @@ section p {
 }
 
 .layout {
-  @apply mx-10 grid grid-cols-2 gap-4 items-center;
+  @apply mx-10 grid grid-cols-1 xl:grid-cols-2 gap-4 items-center;
 }
 </style>

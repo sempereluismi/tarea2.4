@@ -105,14 +105,14 @@
 
 <style scoped>
 h1 {
-  @apply text-6xl text-center font-title py-4 col-span-3;
+  @apply text-6xl text-center font-title py-4;
 }
 .background {
   @apply w-full h-[90vh] flex -z-50 bg-[url('@/assets/fondoOpinion.jpg')] bg-fixed bg-cover items-end;
 }
 
 section {
-  @apply -mt-32 z-50 bg-white rounded-t-[4rem] px-10 py-8 grid grid-cols-3;
+  @apply -mt-32 z-50 bg-white rounded-t-[4rem] px-10 py-8;
 }
 
 .container {
@@ -180,7 +180,7 @@ label {
 }
 
 button {
-  @apply text-xl bg-background text-white py-3 px-5 pl-4 flex items-center border-none rounded-2xl overflow-hidden transition-all duration-200;
+  @apply mb-4 text-xl bg-background text-white py-3 px-5 pl-4 flex items-center border-none rounded-2xl overflow-hidden transition-all duration-200;
 }
 
 button span {

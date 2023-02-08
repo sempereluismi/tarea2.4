@@ -38,14 +38,14 @@ export default {
     }
 
     h2 {
-        @apply font-title text-4xl;
+        @apply font-title text-4xl text-center;
     }
 
     .subcontainer {
-        @apply lg:flex items-center justify-center gap-10;
+        @apply items-center justify-center gap-10;
     }
 
     img {
-        @apply w-[200px] h-[200px] rounded-xl;
+        @apply w-[200px] h-[200px] rounded-xl mx-auto object-cover my-5;
     }
 </style>

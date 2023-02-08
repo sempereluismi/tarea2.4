@@ -38,7 +38,7 @@ import img4 from '@/assets/prime.jpg'
   
   <style scoped>
   h1 {
-    @apply text-6xl text-center font-title py-4 uppercase col-span-2;
+    @apply text-6xl text-center font-title py-4 uppercase lg:col-span-2;
   }
   
   
@@ -47,7 +47,7 @@ import img4 from '@/assets/prime.jpg'
   }
   
   section {
-    @apply grid lg:grid-cols-2 -mt-32 z-50 bg-white rounded-t-[4rem];
+    @apply grid grid-cols-1 lg:grid-cols-2 -mt-32 z-50 bg-white rounded-t-[4rem];
   }
   
   .animationCard {

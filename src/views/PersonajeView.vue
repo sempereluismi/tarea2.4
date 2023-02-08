@@ -60,11 +60,11 @@ export default {
 
 <style scoped>
 h1 {
-    @apply text-6xl text-center font-title py-4 col-span-3;
+    @apply text-6xl text-center font-title py-4 col-span-1 lg:col-span-2 xl:col-span-3;
 }
 
 section {
-    @apply  -mt-32 z-50 bg-white rounded-t-[4rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+    @apply  -mt-32 z-50 bg-white rounded-t-[4rem] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3;
 }
 
 .container {
