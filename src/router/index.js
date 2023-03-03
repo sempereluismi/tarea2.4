@@ -36,7 +36,18 @@ const routes = [
     
     component: () => import(/* webpackChunkName: "director" */ '../views/OpinionView.vue')
   },
-
+  {
+    path: '/section1',
+    name: 'section1',
+    
+    component: () => import(/* webpackChunkName: "director" */ '../views/Section1.vue')
+  },
+  {
+    path: '/section2',
+    name: 'section2',
+    
+    component: () => import(/* webpackChunkName: "director" */ '../views/Section2.vue')
+  },
 ]
 
 const router = createRouter({
