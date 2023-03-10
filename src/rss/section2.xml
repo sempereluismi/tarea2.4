@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Noticias de Ocho apellidos catalanes</title>
+    <link>https://ejemplo.com/ocho-apellidos-catalanes-noticias</link>
+    <description>Feed RSS con las últimas noticias sobre la película Ocho apellidos catalanes.</description>
+    <language>es</language>
+    <lastBuildDate>Thu, 10 Mar 2023 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>La película Ocho apellidos catalanes se estrena con éxito en los cines españoles</title>
+      <link>https://ejemplo.com/ocho-apellidos-catalanes-estreno</link>
+      <description>La esperada película Ocho apellidos catalanes se estrenó en los cines españoles con una gran acogida por parte del público...</description>
+      <pubDate>Fri, 02 Dec 2022 15:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>La actriz Clara Lago habla sobre su papel en la película Ocho apellidos catalanes</title>
+      <link>https://ejemplo.com/clara-lago-papel-ocho-apellidos-catalanes</link>
+      <description>En una entrevista exclusiva, la actriz Clara Lago habla sobre su papel en la película Ocho apellidos catalanes y su experiencia en el rodaje...</description>
+      <pubDate>Tue, 06 Dec 2022 10:30:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Ocho apellidos catalanes nominada a varios premios Goya</title>
+      <link>https://ejemplo.com/ocho-apellidos-catalanes-premios-goya</link>
+      <description>La película Ocho apellidos catalanes ha sido nominada a varios premios Goya, incluyendo Mejor Película, Mejor Director y Mejor Guion Original...</description>
+      <pubDate>Mon, 23 Jan 2023 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

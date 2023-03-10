@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Noticias de Emilio Martínez-Lázaro</title>
+    <link>https://ejemplo.com/noticias-emilio-martinez-lazaro</link>
+    <description>Feed RSS con las últimas noticias sobre Emilio Martínez-Lázaro.</description>
+    <language>es</language>
+    <lastBuildDate>Thu, 10 Mar 2023 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Emilio Martínez-Lázaro dirige una nueva película con actores de renombre</title>
+      <link>https://ejemplo.com/emilio-martinez-lazaro-nueva-pelicula</link>
+      <description>El reconocido director Emilio Martínez-Lázaro ha anunciado su nueva película, que contará con la participación de actores de renombre como...</description>
+      <pubDate>Thu, 10 Mar 2023 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Emilio Martínez-Lázaro recibe un homenaje en el Festival de Cine de Málaga</title>
+      <link>https://ejemplo.com/emilio-martinez-lazaro-homenaje-malaga</link>
+      <description>El Festival de Cine de Málaga ha rendido homenaje al director Emilio Martínez-Lázaro por su trayectoria y aportación al cine español...</description>
+      <pubDate>Wed, 09 Mar 2023 15:30:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Emilio Martínez-Lázaro habla sobre su experiencia en la dirección de cine</title>
+      <link>https://ejemplo.com/emilio-martinez-lazaro-experiencia-cine</link>
+      <description>En una entrevista reciente, el director Emilio Martínez-Lázaro ha compartido su experiencia en la dirección de cine y ha hablado sobre...</description>
+      <pubDate>Tue, 08 Mar 2023 09:45:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
